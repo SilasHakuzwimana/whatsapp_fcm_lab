@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "579433838100",
+    "project_id": "whatsapp-fcm-lab-d496d",
+    "storage_bucket": "whatsapp-fcm-lab-d496d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579433838100:android:73ed246f47c6f4b3b39901",
+        "android_client_info": {
+          "package_name": "com.example.whatsapp_fcm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoSUGCd5KZjKowvxFkMNKNrhag7ie4dgI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
