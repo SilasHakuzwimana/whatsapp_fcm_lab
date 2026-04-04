@@ -1,4 +1,3 @@
-
 # WhatsApp FCM Lab
 
 A professional **WhatsApp-style Flutter application** demonstrating **Firebase Cloud Messaging (FCM)** push notifications — built for Year 3 CSE Lab 6.
@@ -77,8 +76,8 @@ flutter run
 
 1. Run the app and tap the **key icon** (top right)
 2. **Copy** your device token
-3. Go to [Firebase Console](https://console.firebase.google.com/) → **Engage** → **Messaging**
-4. Click **New campaign** → **Firebase Notification messages**
+3. Go to [Firebase Console](https://console.firebase.google.com/) → Messaging
+4. Click **Create your first campaign** → **Firebase Notification messages / directly access via the [link](https://console.firebase.google.com/u/6/project/whatsapp-fcm-lab-d496d/notification/compose)**
 5. Enter a **Title** and **Body**
 6. Click **Send test message**
 7. Paste your token → **Add** → **Test**
