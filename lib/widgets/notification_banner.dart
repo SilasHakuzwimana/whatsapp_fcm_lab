@@ -17,6 +17,7 @@ class NotificationBanner extends StatelessWidget {
           borderRadius: BorderRadius.circular(14),
           color: Colors.transparent,
           child: Container(
+            height: 72,
             decoration: BoxDecoration(
               color: const Color(0xFF1F2C34),
               borderRadius: BorderRadius.circular(14),
@@ -25,7 +26,7 @@ class NotificationBanner extends StatelessWidget {
                 width: 1.5,
               ),
             ),
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             child: Row(
               children: [
                 Container(
@@ -45,6 +46,7 @@ class NotificationBanner extends StatelessWidget {
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Text(
@@ -64,7 +66,7 @@ class NotificationBanner extends StatelessWidget {
                           color: Colors.white70,
                           fontSize: 13,
                         ),
-                        maxLines: 2,
+                        maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                       ),
                     ],
