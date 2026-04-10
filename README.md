@@ -2,11 +2,9 @@
 
 A professional **WhatsApp-style Flutter application** demonstrating **Firebase Cloud Messaging (FCM)** push notifications — built for Year 3 CSE Lab 6.
 
----
-
 ## Screenshots
 
-> *Add your screenshots here after running the app*
+> *Find screenshots in **screenshots** folder*
 
 ## Features
 

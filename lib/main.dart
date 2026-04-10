@@ -6,7 +6,6 @@ import 'package:overlay_support/overlay_support.dart';
 import 'firebase_options.dart';
 import 'screens/home_screen.dart';
 
-// Background message handler must be registered before calling runApp
 @pragma('vm:entry-point')
 Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
@@ -22,11 +21,11 @@ void main() async {
   // Register background handler
   FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
 
-  runApp(const MyApp());
+  runApp(const WhatsappFCM());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class WhatsappFCM extends StatelessWidget {
+  const WhatsappFCM({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -34,6 +33,15 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'WhatsApp FCM',
         debugShowCheckedModeBanner: false,
+        // Corrected Builder:
+        builder: (context, child) {
+          return MediaQuery(
+            data: MediaQuery.of(
+              context,
+            ).copyWith(textScaler: TextScaler.noScaling),
+            child: child!, // Child must be inside MediaQuery
+          );
+        },
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(
             seedColor: const Color(0xFF25D366),
